@@ -327,6 +327,23 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+@media (min-width: 376px) and (max-width: 450px) {
+    .logo {
+        width: 18px; /* Slightly narrower obelisk */
+        height: 70px; /* Slightly shorter height */
+    }
+
+    .logo-text {
+        font-size: 64px; /* Intermediate text size */
+    }
+
+    .logo-container {
+        margin-bottom: 30px; /* Adjust spacing below logo */
+    }
+}
+
+
+
 /* Align hero content to the left */
 .hero-content {
     display: flex;
