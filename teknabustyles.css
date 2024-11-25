@@ -707,28 +707,33 @@ ul li a.service-text:hover {
     }
 }
 
-/* Hybrid Layout for Tablet Screens */
 @media (min-width: 600px) and (max-width: 800px) {
     .sdlc-content {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Two columns: SDLC Item and Image */
-        align-items: center;
+        grid-template-columns: 1fr 1fr; /* Two columns: SDLC item and image */
         gap: 20px;
+        align-items: center;
     }
 
     .sdlc-list-wrapper {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .sdlc-item {
-        margin-bottom: 20px; /* Add spacing between SDLC items */
-        cursor: pointer;
+        display: block;
+        width: 100%; /* Take up the full width of the column */
+        padding: 20px;
+        background-color: var(--background-alternative);
+        border-radius: 8px;
+        border: 1px solid transparent;
         transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
     .sdlc-display {
-        justify-self: center; /* Center align the image */
+        justify-self: center; /* Center-align the image in its column */
+        max-width: 100%;
     }
 
     .sdlc-display img {
@@ -736,20 +741,24 @@ ul li a.service-text:hover {
         height: auto;
         border-radius: 8px;
     }
-}
 
-@media (min-width: 600px) and (max-width: 768px) {
-    .sdlc-content {
-        grid-template-columns: 1fr; /* Stack items in smaller tablet screens */
+    .next-icon {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        background: var(--icon-primary);
+        color: var(--text-primary);
+        border-radius: 50%;
         padding: 10px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
-    .sdlc-item h3 {
-        font-size: 1.2rem; /* Slightly smaller headings */
-    }
-
-    .sdlc-display img {
-        max-width: 90%; /* Scale image to fit */
+    .next-icon:hover {
+        background-color: var(--icon-hover);
+        transform: scale(1.1);
     }
 }
 
