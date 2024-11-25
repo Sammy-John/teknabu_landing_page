@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Teknabu | Innovating Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="teknabustyles.css">
+</head>
+<body>
+    <header class="navbar hidden">
+        <div class="nav-logo">
+            <div class="logo-static" aria-hidden="true"></div>
+            <div class="logo-text-static">
+                <span>e</span><span>k</span><span>N</span><span>a</span><span>b</span><span>u</span>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="#hero" arial-label="Go to Home section">Home</a>
+            <a href="#mission-statement" aria-label="Go to Mission Statement section">About</a>
+            <a href="#sdlc-section" aria-label="Go to SDLC section">Process</a>
+        </nav>
+        <div class="burger-menu" role="button" aria-expanded="false" onclick="toggleMobileMenu()" tabindex="0">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="mobile-menu">
+            <a href="#hero" tabindex="0" aria-label="Go to Home section">Home</a>
+            <a href="#mission-statement" tabindex="0" aria-label="Go to About section">About</a>
+            <a href="#sdlc-section" tabindex="0" aria-label="Go to Process section">Process</a>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="logo-container">
+            <div class="logo" aria-hidden="true"></div>
+            <div class="logo-text">
+                <span>e</span><span>k</span><span>N</span><span>a</span><span>b</span><span>u</span>
+            </div>
+        </div>
+
+        <!-- Aligning the text to the left -->
+        <div class="hero-content">
+            <h1>Creating Exceptional Digital Solutions</h1>
+        </div>
+    </section>
+    
+    <section class="mission-statement" id="mission-statement">
+        <h2>Your expert partners for building mission-driven products</h2>
+        <div class="columns">
+            <!-- About Column -->
+            <div class="column about" role="region" aria-label="About Section">
+                <h3>About</h3>
+                <p>Teknabu is on a mission to craft exceptional digital experiences. We’re here to support your goals with innovative solutions, actionable insights, and a commitment to growth. Together, we believe in learning from every step, sharing knowledge, and celebrating progress. Teknabu is dedicated to continuous learning, growth, and innovation – because success is a journey we embark on together
+                </p>
+                <a href="./landing_page.html" class="personal-link">
+                    <span>Find out more about who is behind Teknabu</span>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </a>
+            </div>
+    
+            <!-- Services Column -->
+            <div class="column services" role="region" aria-label="Services Section">
+                <h3>Services</h3>
+                <ul>
+                    <li><i class="service-icon fas fa-wrench" aria-hidden="true"></i> 
+                        <a href="javascript:void(0);" onclick="openModal()" class="service-text" aria-label="Learn more about Custom Software Solutions">Custom Software Solutions</a>
+                    </li>
+                    <li><i class="service-icon fas fa-box"></i> 
+                        <a href="javascript:void(0);" onclick="openModal()" class="service-text" arial-label="Learn more about Packaged Software Products">Packaged Software Products</a>
+                    </li>
+                    <li><i class="service-icon fas fa-newspaper"></i> 
+                        <a href="javascript:void(0);" onclick="openModal()" class="service-text" aria-label="Go to more about Tech News and Insights">Tech News & Insights</a>
+                    </li>
+                    <li><i class="service-icon fas fa-graduation-cap"></i> 
+                        <a href="javascript:void(0);" onclick="openModal()" class="service-text" aria-label="Go to Learninng Materials and Resources">Learning Materials & Resources</a>
+                    </li>
+                    <li><i class="service-icon fas fa-chart-line"></i> 
+                        <a href="javascript:void(0);" onclick="openModal()" class="service-text" aria-label="Learn More about Digital Strategy Consultation">Digital Strategy Consulting</a>
+                    </li>
+                    <li><i class="service-icon fas fa-users"></i> 
+                        <a href="javascript:void(0);" onclick="openModal()" class="service-text" aria-label="Go to Community and Services">Community & Support</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="sdlc-section" id="sdlc-section">
+    <!-- SDLC Intro Section -->
+    <div class="sdlc-intro">
+        <h2>Leverage our Full Digital Product Expertise</h2>
+        <p>We support every phase of the Software Development Life Cycle (SDLC), ensuring smooth transitions from one phase to the next, with expert guidance at each step.</p>
+    </div>
+
+    <!-- SDLC Content -->
+    <div class="sdlc-content">
+        <div class="sdlc-list-wrapper">
+            <div class="sdlc-list" role="list" aria-label="SDLC Phases">
+                <div class="sdlc-item" data-image="requirements.webp" role="listitem" tabindex="0" aria-label="Requirement Gathering and Analysis">
+                    <h3>Requirement Gathering & Analysis</h3>
+                    <p>Collaborate with stakeholders to understand needs and define technical requirements.</p>
+                </div>
+                <div class="sdlc-item" data-image="design.webp" role="listitem" tabindex="0" aria-label="Design and Architecture">
+                    <h3>Design & Architecture</h3>
+                    <p>Create detailed designs, selecting the best technologies and architecture for scalability.</p>
+                </div>
+                <div class="sdlc-item" data-image="development.webp" role="listitem" tabindex="0" aria-label="Development and Coding">
+                    <h3>Development & Coding</h3>
+                    <p>Deliver clean, maintainable code following best practices for full-stack development.</p>
+                </div>
+                <div class="sdlc-item" data-image="testing.webp" role="listitem" tabindex="0" aria-label="Testing and Quality Assurance">
+                    <h3>Testing & QA</h3>
+                    <p>Rigorous testing to ensure functionality, performance, and security.</p>
+                </div>
+                <div class="sdlc-item" data-image="deployment.webp" role="listitem" tabindex="0" aria-label="Deployment and Maintenance">
+                    <h3>Deployment & Maintenance</h3>
+                    <p>Ensure smooth deployment and ongoing support for a stable product.</p>
+                </div>
+            </div>
+            <!-- Next Arrow Icon -->
+    <div class="next-icon" id="nextIcon" role="button" aria-label="Next SDLC Item" tabindex="0">&gt;</div>
+        </div>
+
+        <!-- SDLC Image Display -->
+        <div class="sdlc-display">
+            <img id="sdlc-image" src="requirements.webp" alt="Requirement Gathering & Analysis">
+        </div>
+    </div>
+</section>
+
+    
+<footer role="contentinfo">
+    <div class="footer-content">
+        <div class="footer-section contact-info">
+            <h3>Contact</h3>
+            <p>
+                Email: 
+                <a href="mailto:sjr.dev@protonmail.com" 
+                   class="email-link" 
+                   aria-label="Send an email to sjr.dev@protonmail.com">
+                   sjr.dev@protonmail.com
+                </a>
+                <button onclick="copyEmail()" 
+                        aria-label="Copy email address to clipboard" 
+                        class="clipboard-icon">
+                    <i class="fas fa-clipboard"></i>
+                </button>
+            </p>
+        </div>        
+        <div class="footer-section social-links">
+            <h3>Let's Connect</h3>
+            <div class="social-icons">
+                <a href="https://x.com/nabu_tech" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/sammyjohnrawlinson/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Sammy-John" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <!-- Logo and Address Section -->
+        <div class="footer-logo-address">
+            <div class="footer-logo">
+                <div class="logo-static" aria-hidden="true"></div>
+                <div class="logo-text-static">
+                    <span>e</span><span>k</span><span>N</span><span>a</span><span>b</span><span>u</span>
+                </div>
+            </div>
+            <div class="footer-address">
+                <p>&copy; 2024 TekNabu. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    <!-- Modal Structure -->
+    <div id="comingSoonModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-content">
+            <h3 id="modalTitle">Coming Soon...</h3>
+            <p>This service will be available soon. Stay tuned!</p>
+            <button id="closeModal" class="close-btn" aria-label="Close">Close</button>
+        </div>
+    </div>
+    
+
+    <script src="teknabu.js"></script>
+
+</body>
+</html>
