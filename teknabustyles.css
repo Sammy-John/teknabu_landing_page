@@ -311,6 +311,22 @@ h1, h2, h3, h4, h5 {
 .logo-text span:nth-child(5) { animation-delay: 0.9s; }
 .logo-text span:nth-child(6) { animation-delay: 1.1s; }
 
+/* Responsive Adjustments for Small Screens */
+@media (max-width: 375px) {
+    .logo {
+        width: 15px; /* Narrower obelisk */
+        height: 60px; /* Shorter height */
+    }
+
+    .logo-text {
+        font-size: 48px; /* Reduce text size */
+    }
+
+    .logo-container {
+        margin-bottom: 20px; /* Reduce spacing below the logo */
+    }
+}
+
 /* Align hero content to the left */
 .hero-content {
     display: flex;
