@@ -706,6 +706,54 @@ ul li a.service-text:hover {
         display: none;
     }
 }
+
+/* Hybrid Layout for Tablet Screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sdlc-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns: SDLC Item and Image */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .sdlc-list-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sdlc-item {
+        margin-bottom: 20px; /* Add spacing between SDLC items */
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .sdlc-display {
+        justify-self: center; /* Center align the image */
+    }
+
+    .sdlc-display img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .sdlc-content {
+        grid-template-columns: 1fr; /* Stack items in smaller tablet screens */
+        padding: 10px;
+    }
+
+    .sdlc-item h3 {
+        font-size: 1.2rem; /* Slightly smaller headings */
+    }
+
+    .sdlc-display img {
+        max-width: 90%; /* Scale image to fit */
+    }
+}
+
+
 /* Footer Styling */
 footer {
     background-color: var(--background-alternative);
