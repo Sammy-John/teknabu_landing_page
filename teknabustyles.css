@@ -757,28 +757,22 @@ ul li a.service-text:hover {
         transition: opacity 0.3s ease;
     }
 
-    /* Next button */
-    .next-icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+     /* Next Icon, hidden on desktop */
+     .next-icon {
+        display: block; /* Show only on mobile */
         position: absolute;
         top: 50%;
-        right: 10px;
-        width: 40px;
-        height: 40px;
-        font-size: 1.5rem;
+        right: 15px;
+        transform: translateY(-50%);
+        font-size: 2em;
         color: var(--icon-primary);
-        background-color: var(--background-main);
-        border-radius: 50%;
         cursor: pointer;
-        box-shadow: 0 0 5px var(--icon-primary);
-        transition: background-color 0.3s ease, transform 0.3s ease;
+        z-index: 1;
+        transition: color 0.3s ease;
     }
 
     .next-icon:hover {
-        background-color: var(--icon-hover);
-        transform: scale(1.1);
+        color: var(--icon-hover);
     }
 }
 
