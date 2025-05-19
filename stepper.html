@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vertical Stepper Example</title>
+    <link rel="stylesheet" href="stepper.css">
+</head>
+<body>
+    <section class="stepper-section">
+        <h2>Our 5-Step Process</h2>
+        <div class="stepper">
+            <div class="step"><div class="step-number">1</div><div class="step-content"><h3>Discovery & Planning</h3><p>Align vision and scope to create a clear roadmap.</p></div></div>
+            <div class="step"><div class="step-number">2</div><div class="step-content"><h3>Design & UX</h3><p>Create intuitive, accessible interfaces through wireframes and testing.</p></div></div>
+            <div class="step"><div class="step-number">3</div><div class="step-content"><h3>Agile Development</h3><p>Clean, scalable code built using modern full-stack technologies.</p></div></div>
+            <div class="step"><div class="step-number">4</div><div class="step-content"><h3>Launch Readiness</h3><p>Testing, QA, and performance optimization for a stable launch.</p></div></div>
+            <div class="step"><div class="step-number">5</div><div class="step-content"><h3>Support & Evolution</h3><p>Post-launch support, scaling strategies, and version improvements.</p></div></div>
+        </div>
+    </section>
+    <script>
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target); // only animate once
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  document.querySelectorAll('.step, .timeline-item').forEach(el => {
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
