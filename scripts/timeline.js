@@ -1,7 +1,7 @@
 const timelineItems = document.querySelectorAll('.timeline-item');
 
   timelineItems.forEach((item, index) => {
-    const delay = index * 1200;
+    const delay = index * 1000;
     const observer = new IntersectionObserver((entries, obs) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
