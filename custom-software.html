@@ -4,9 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Custom Software Solutions | Teknabu</title>
-  <link rel="stylesheet" href="./styles/styles.css" />
+   <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
+<header class="navbar">
+        <div class="nav-logo">
+            <div class="logo-static" aria-hidden="true"></div>
+            <div class="logo-text-static">
+                <span>e</span><span>k</span><span>N</span><span>a</span><span>b</span><span>u</span>
+            </div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html#hero" aria-label="Go to Home section">Home</a>
+          <a href="index.html#mission-statement" aria-label="Go to About section">About</a>
+          <a href="index.html#approach" aria-label="Go to Process section">Process</a>
+        </nav>
+
+        <div class="burger-menu" role="button" aria-expanded="false" onclick="toggleMobileMenu()" tabindex="0">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="mobile-menu">
+            <a href="#hero" tabindex="0" aria-label="Go to Home section">Home</a>
+            <a href="#mission-statement" tabindex="0" aria-label="Go to About section">About</a>
+            <a href="#sdlc-section" tabindex="0" aria-label="Go to Process section">Process</a>
+        </div>
+    </header>
 
   <!-- Hero Section -->
 <section class="custom-hero-section" id="hero">
@@ -199,6 +224,52 @@
     <p>Tell us what you need — we'll help you figure out the rest.</p>
     <a href="mailto:sjr.dev@protonmail.com" class="cta-button primary">Get in Touch</a>
   </section>
+
+  
+    
+<footer role="contentinfo">
+    <div class="footer-content">
+        <div class="footer-section contact-info">
+            <h3>Contact</h3>
+            <p>
+                Email: 
+                <a href="mailto:sjr.dev@protonmail.com" 
+                   class="email-link" 
+                   aria-label="Send an email to sjr.dev@protonmail.com">
+                   sjr.dev@protonmail.com
+                </a>
+                <button onclick="copyEmail()" 
+                        aria-label="Copy email address to clipboard" 
+                        class="clipboard-icon">
+                    <i class="fas fa-clipboard"></i>
+                </button>
+            </p>
+        </div>        
+        <div class="footer-section social-links">
+            <h3>Let's Connect</h3>
+            <div class="social-icons">
+                <a href="https://x.com/nabu_tech" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/sammyjohnrawlinson/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Sammy-John" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <!-- Logo and Address Section -->
+        <div class="footer-logo-address">
+            <div class="footer-logo">
+                <div class="logo-static" aria-hidden="true"></div>
+                <div class="logo-text-static">
+                    <span>e</span><span>k</span><span>N</span><span>a</span><span>b</span><span>u</span>
+                </div>
+            </div>
+            <div class="footer-address">
+                <p>&copy; 2024 TekNabu. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./scripts/teknabu.js"></script>
+    <script src="./scripts/timeline.js"></script>
+
 
 </body>
 </html>

@@ -1081,3 +1081,323 @@ footer {
   font-size: 1.1rem;
   margin-bottom: 30px;
 }
+
+/* Hero Section */
+.products-hero-split {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 80px 20px 60px;
+  background-color: var(--background-main);
+}
+
+.products-hero-content {
+  flex: 1 1 480px;
+  max-width: 600px;
+}
+
+.products-hero-content h1 {
+  font-size: 2.5rem;
+  color: var(--heading-primary);
+  text-shadow: 0 0 5px var(--heading-glow-subtle), 0 0 10px var(--heading-primary);
+  margin-bottom: 20px;
+}
+
+.products-hero-content p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.products-hero-image {
+  flex: 1 1 400px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.products-hero-image img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .products-hero-split {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .products-hero-content,
+  .products-hero-image {
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+
+/* Filter Buttons */
+.product-filters {
+  padding: 30px 20px;
+  text-align: center;
+  background-color: var(--background-alternative);
+}
+
+.filter-button {
+  background-color: transparent;
+  border: 1px solid var(--border-light);
+  color: var(--text-primary);
+  padding: 10px 16px;
+  margin: 5px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: var(--text-hover);
+  color: #000;
+}
+
+/* Product Grid */
+.product-grid-section {
+  padding: 60px 20px;
+  background-color: var(--background-main);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: var(--background-alternative);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 5px var(--border-light);
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 10px var(--text-hover);
+}
+
+.product-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 4px var(--border-light);
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  color: var(--heading-primary);
+  margin-bottom: 8px;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.product-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  font-size: 0.85rem;
+  background-color: var(--text-secondary);
+  color: #000;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tag.price {
+  background-color: var(--icon-primary);
+}
+
+.coming-soon .tag:last-child {
+  background-color: var(--text-link);
+  color: #fff;
+}
+
+/* Subscribe Banner */
+.subscribe-banner {
+  background-color: var(--background-secondary);
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 1px solid var(--border-light);
+}
+
+.subscribe-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.subscribe-content h2 {
+  font-size: 2rem;
+  color: var(--heading-primary);
+  margin-bottom: 16px;
+  text-shadow: 0 0 4px var(--heading-glow-subtle);
+}
+
+.subscribe-content p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+}
+
+/* --- Tech Insights Page --- */
+
+.tech-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #0e0e0e, #1c1c1c);
+}
+
+.tech-hero .hero-content {
+  flex: 1;
+}
+
+.tech-hero h1 {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.tech-hero p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+}
+
+.tech-hero img {
+  max-width: 400px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* Featured article */
+.featured-article {
+  padding: 60px 20px;
+  background-color: var(--background-alt);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.featured-article h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+}
+
+.featured-article p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+}
+
+/* Article Grid */
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 60px 20px;
+}
+
+.article-card {
+  background-color: var(--background-alternative);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 10px var(--accent);
+}
+
+.article-card h3 {
+  font-size: 1.2rem;
+  color: var(--heading-primary);
+  margin-bottom: 10px;
+}
+
+.article-card p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* CTA Section */
+.newsletter-cta {
+  background: radial-gradient(ellipse at center, #111 0%, #000 100%);
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 1px solid var(--border-light);
+}
+
+.newsletter-cta h3 {
+  font-size: 1.8rem;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.newsletter-cta p {
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.newsletter-cta button {
+  background-color: var(--accent);
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-cta button:hover {
+  background-color: var(--accent-light);
+}
+
+/* Responsive Hero */
+@media (max-width: 768px) {
+  .tech-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tech-hero img {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+}

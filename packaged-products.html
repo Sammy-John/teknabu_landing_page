@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teknabu | Digital Products</title>
+  <link rel="stylesheet" href="./styles/teknabustyles.css" />
+  <link rel="stylesheet" href="./styles/products.css" />
+</head>
+<body>
+  <header class="navbar hidden">
+        <div class="nav-logo">
+            <div class="logo-static" aria-hidden="true"></div>
+            <div class="logo-text-static">
+                <span>e</span><span>k</span><span>N</span><span>a</span><span>b</span><span>u</span>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="#hero" aria-label="Go to Home section">Home</a>
+            <a href="#mission-statement" aria-label="Go to Mission Statement section">About</a>
+            <a href="#approach" aria-label="Go to SDLC section">Process</a>
+        </nav>
+        <div class="burger-menu" role="button" aria-expanded="false" onclick="toggleMobileMenu()" tabindex="0">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="mobile-menu">
+            <a href="#hero" tabindex="0" aria-label="Go to Home section">Home</a>
+            <a href="#mission-statement" tabindex="0" aria-label="Go to About section">About</a>
+            <a href="#sdlc-section" tabindex="0" aria-label="Go to Process section">Process</a>
+        </div>
+    </header>
+  <!-- Hero Section -->
+  <section class="products-hero-split">
+  <div class="products-hero-content">
+    <h1>Packaged Software Products</h1>
+    <p>Explore our collection of ready-to-use digital tools, templates, and resources designed to empower your business — with no custom build required.</p>
+    <div class="hero-buttons">
+      <a href="#products" class="cta-button">Browse Products</a>
+      <a href="#subscribe" class="cta-button primary">Join the Newsletter</a>
+    </div>
+  </div>
+  <div class="products-hero-image">
+    <img src="./images/package-hero.webp" alt="Showcase of packaged digital products">
+  </div>
+</section>
+
+
+  <!-- Filter Buttons -->
+  <section class="product-filters">
+    <button class="filter-button">All</button>
+    <button class="filter-button">Software</button>
+    <button class="filter-button">Templates</button>
+    <button class="filter-button">Guides</button>
+    <button class="filter-button">Subscriptions</button>
+    <button class="filter-button">Coming Soon</button>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="product-grid-section" id="products">
+    <div class="product-grid">
+      <!-- Product Card -->
+      <div class="product-card">
+        <img src="./images/products/note-viewer.webp" alt="Note Viewer App" />
+        <h3>Note Viewer App</h3>
+        <p>Markdown-powered knowledge viewer with dark mode and offline sync.</p>
+        <div class="product-tags">
+          <span class="tag">Software</span>
+          <span class="tag price">$19</span>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./images/products/cheatsheet-guide.webp" alt="C# Cheatsheet" />
+        <h3>C# Cheatsheet</h3>
+        <p>A printable PDF of all core C# syntax, OOP, LINQ, and async patterns.</p>
+        <div class="product-tags">
+          <span class="tag">Guide</span>
+          <span class="tag price">Free</span>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./images/products/proposal-template.webp" alt="Proposal Template" />
+        <h3>Proposal Template</h3>
+        <p>Professionally designed Google Docs and Word template for freelance gigs.</p>
+        <div class="product-tags">
+          <span class="tag">Template</span>
+          <span class="tag price">$9</span>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./images/products/dev-starter-kit.webp" alt="Dev Starter Kit" />
+        <h3>Dev Starter Kit</h3>
+        <p>Project boilerplates for Node.js, WPF, Electron, and .NET apps.</p>
+        <div class="product-tags">
+          <span class="tag">Software</span>
+          <span class="tag price">$29</span>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./images/products/dashboard-ui-kit.webp" alt="Dashboard UI Kit" />
+        <h3>Dashboard UI Kit</h3>
+        <p>Figma + HTML/CSS components for admin panels and SaaS dashboards.</p>
+        <div class="product-tags">
+          <span class="tag">Template</span>
+          <span class="tag price">$15</span>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./images/products/powershell-bundle.webp" alt="PowerShell Toolkit" />
+        <h3>PowerShell Toolkit</h3>
+        <p>Scripts for file cleanup, scheduling, system config, and user management.</p>
+        <div class="product-tags">
+          <span class="tag">Software</span>
+          <span class="tag price">$12</span>
+        </div>
+      </div>
+
+      <div class="product-card coming-soon">
+        <img src="./images/products/coming-soon.webp" alt="Coming Soon Product" />
+        <h3>AI Cover Letter Generator</h3>
+        <p>Create custom-tailored job applications in seconds using GPT.</p>
+        <div class="product-tags">
+          <span class="tag">Subscription</span>
+          <span class="tag">Coming Soon</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Optional CTA / Subscription Banner -->
+  <section class="subscribe-banner" id="subscribe">
+    <div class="subscribe-content">
+      <h2>Join the Teknabu Platform</h2>
+      <p>Get instant access to all premium templates, software, and updates with a single subscription.</p>
+      <a href="javascript:void(0);" class="cta-button primary">Coming Soon</a>
+    </div>
+  </section>
+
+</body>
+</html>
