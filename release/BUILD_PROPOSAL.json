@@ -1,0 +1,10 @@
+{
+  "source_directory": ".",
+  "proposed_build_command": "python3 checks/prepare_payload.py --output dist",
+  "proposed_output_directory": "dist",
+  "actual_cloudflare_configuration_verified": false,
+  "configured_by_this_change": false,
+  "requires": "Actual existing target/build environment and GitHub repository/branch/pipeline/rollback review before push",
+  "output_allowlist": "release/APPROVED_RELEASE_MANIFEST.json files only",
+  "new_toolchain_install": false
+}

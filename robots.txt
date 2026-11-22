@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /assets/temp/
+Disallow: /drafts/
+Disallow: /private/
+
+Sitemap: https://teknabu.com/sitemap.xml

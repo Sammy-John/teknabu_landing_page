@@ -1,0 +1,488 @@
+{
+  "status": "PUBLIC RELEASE CANDIDATE \u2014 NOT DEPLOYED; VERIFY HOSTING TARGET/CURRENT DEPLOYMENT/BACKUP/ROLLBACK BEFORE UPLOAD",
+  "candidate_commit": "576b9dd5130f43ecdd8adb570499a038249397cc",
+  "files": [
+    {
+      "path": "1714430952637.jpg",
+      "bytes": 79109,
+      "sha256": "c7055e5b141096d5da792b3d9433d3d6a147b42e2cca6cbc760ca178e41ca2b8"
+    },
+    {
+      "path": "404.html",
+      "bytes": 3170,
+      "sha256": "94d83abf877a7642d0be35d0e6baa95215a54e3da9ea3cb511fb7b9898dd2a67"
+    },
+    {
+      "path": "about.html",
+      "bytes": 8916,
+      "sha256": "9dcada6845ee224f37eb8d5397ac58eb6c97b067523370c4448f810de8099f41"
+    },
+    {
+      "path": "android-chrome-192x192.png",
+      "bytes": 13168,
+      "sha256": "9dbed65748149d3c489b1c14a0ab87266d6ab6d3d55a08b4961e9460bd0e8911"
+    },
+    {
+      "path": "android-chrome-512x512.png",
+      "bytes": 64261,
+      "sha256": "4709712f215ce67109076b9a89b4223d26a1b51ad7ed2466276cdd770332ab6b"
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "bytes": 11783,
+      "sha256": "3976ac1d03d1f3da2d2da14d44e1aeb0eea5e8ba4fb0017c1a9f4545883850d8"
+    },
+    {
+      "path": "favicon-16x16.png",
+      "bytes": 364,
+      "sha256": "326b29645c4c18bd9d8f419e9e77d075269cfd924fe39a3b04d3212dbc1a4236"
+    },
+    {
+      "path": "favicon-32x32.png",
+      "bytes": 848,
+      "sha256": "8c1afb2c57cbf84974c53af0c9d727286f4ab2ae8b2c2b9d2aac4417cb3bf3d7"
+    },
+    {
+      "path": "index.html",
+      "bytes": 10080,
+      "sha256": "fa363fed8658d83da0b22211bbd8df955354d24f88e1e801c053382d567bf014"
+    },
+    {
+      "path": "logo-texture-black.png",
+      "bytes": 2222074,
+      "sha256": "de8f6372833f90b4e61627f61f69943183d238cfa4ea59d5e808658f51445cc2"
+    },
+    {
+      "path": "logo-texture-black.webp",
+      "bytes": 211528,
+      "sha256": "49b8f388edc89d2256e475e5c7effaadc51619f27c58603e16ef4b4b53229275"
+    },
+    {
+      "path": "main.js",
+      "bytes": 9308,
+      "sha256": "2b86fdafb2619c74f7d25ad1fb42912b0b5cf8e32e202829d53f8454a5d51fe0"
+    },
+    {
+      "path": "og-image.jpg",
+      "bytes": 136376,
+      "sha256": "24d94193a19600866a002edc3a3fe3f4e440a3f035603f8c820225db59bc7907"
+    },
+    {
+      "path": "portfolio-assets/big-shoulders-display-LICENSE.txt",
+      "bytes": 4489,
+      "sha256": "e887db98623c1c52cdb733b86ca0d6876b3f3b02654242202c2678ecf6e5369e"
+    },
+    {
+      "path": "portfolio-assets/big-shoulders-display-variable.woff2",
+      "bytes": 35436,
+      "sha256": "698f9960927e7b5a0c38e5bf388cd0a6e42d855062fe70366cf5057664e39401"
+    },
+    {
+      "path": "portfolio-assets/game-strategy-scene.png",
+      "bytes": 92379,
+      "sha256": "9576c5a26d563ebf69448f29fc2f2800caddfed1a6beac0aaaa9657305851698"
+    },
+    {
+      "path": "portfolio-assets/linkedin-icon.svg",
+      "bytes": 368,
+      "sha256": "07426bedb0cea2b1e89718d8ead7901a732f1f3ecfcc8e2b0b286f925aff154a"
+    },
+    {
+      "path": "portfolio-assets/lucide-ISC-LICENSE.txt",
+      "bytes": 880,
+      "sha256": "1e7290b35280a048667bbf0ebabac1c7fd52a75300e8b2946ac165715997f2bc"
+    },
+    {
+      "path": "portfolio-assets/mail-icon.svg",
+      "bytes": 328,
+      "sha256": "e858435b4494f063437ef0c864d0a916385757553e7550eacb42266933e41510"
+    },
+    {
+      "path": "portfolio-assets/solva-logo-hero.png",
+      "bytes": 106886,
+      "sha256": "a4f0bd77933dd9e6daa8ab9b713309a78e19513a32f8187af5096273b642fa7c"
+    },
+    {
+      "path": "portfolio-assets/x-icon.svg",
+      "bytes": 430,
+      "sha256": "dd46f96b6f47fcd33683b79ddfaf3daca1d4f8aeba3c0f2bde1584c69cc699d4"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 135,
+      "sha256": "31608c10068c95b6c4442877e5706adfaf5613683dac27cecfe9db5e5763778b"
+    },
+    {
+      "path": "site.webmanifest",
+      "bytes": 263,
+      "sha256": "7a9e07ce1f7386689917602ddc5a75750ad842e605ff764f67173529c181bf04"
+    },
+    {
+      "path": "sitemap.xml",
+      "bytes": 210,
+      "sha256": "cedc6251791ff1f5f8df47b2679022505c72dd7877b83b0f12c5df880b22de64"
+    },
+    {
+      "path": "studio-teknabu-logo-120.webp",
+      "bytes": 3524,
+      "sha256": "b2ff5f06675bcda239b1a1112ff4700ce8c9c05ab2fe41e251f07a595985df00"
+    },
+    {
+      "path": "studio-teknabu-logo-180.webp",
+      "bytes": 6104,
+      "sha256": "483e8133c23e41bca844dc1029539aee7f0d995d591f75aeea0c91174e785749"
+    },
+    {
+      "path": "studio-teknabu-logo-60.webp",
+      "bytes": 1452,
+      "sha256": "984ac1521ace1bcbfca095808323e78b7e9ee4353597cbc08273338920c4469c"
+    },
+    {
+      "path": "studio-teknabu-logo.png",
+      "bytes": 188664,
+      "sha256": "1339feca4f67f718e0753a92e201724d94325c3a0729eccefbdc724754fe44ca"
+    },
+    {
+      "path": "studio-teknabu-logo.webp",
+      "bytes": 1423011,
+      "sha256": "e1e6bedca689a92d8e0b8a1cb122118115a175527567617734d8383374b6fc3b"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 93039,
+      "sha256": "f2d9d5136f68ad0f5cc4060bf6ac64f70fd895c42d79455f68538cebd0e6a66d"
+    }
+  ],
+  "file_count": 30,
+  "total_bytes": 4728583,
+  "archive_sha256": "bf792fa5b0cc7d1c5a8a1f6daa9243f18dde957f0691914926d5b499dabb2809",
+  "archive": "studio-teknabu-private-review.zip",
+  "dependencies": [
+    {
+      "from": "404.html",
+      "to": "styles.css"
+    },
+    {
+      "from": "404.html",
+      "to": "favicon-32x32.png"
+    },
+    {
+      "from": "404.html",
+      "to": "index.html"
+    },
+    {
+      "from": "404.html",
+      "to": "studio-teknabu-logo-180.webp"
+    },
+    {
+      "from": "404.html",
+      "to": "studio-teknabu-logo-120.webp"
+    },
+    {
+      "from": "404.html",
+      "to": "studio-teknabu-logo-180.webp"
+    },
+    {
+      "from": "404.html",
+      "to": "index.html"
+    },
+    {
+      "from": "404.html",
+      "to": "about.html"
+    },
+    {
+      "from": "404.html",
+      "to": "index.html"
+    },
+    {
+      "from": "404.html",
+      "to": "index.html"
+    },
+    {
+      "from": "404.html",
+      "to": "index.html"
+    },
+    {
+      "from": "404.html",
+      "to": "studio-teknabu-logo-120.webp"
+    },
+    {
+      "from": "404.html",
+      "to": "studio-teknabu-logo-60.webp"
+    },
+    {
+      "from": "404.html",
+      "to": "studio-teknabu-logo-120.webp"
+    },
+    {
+      "from": "404.html",
+      "to": "studio-teknabu-logo-180.webp"
+    },
+    {
+      "from": "404.html",
+      "to": "index.html"
+    },
+    {
+      "from": "404.html",
+      "to": "about.html"
+    },
+    {
+      "from": "404.html",
+      "to": "index.html"
+    },
+    {
+      "from": "404.html",
+      "to": "index.html"
+    },
+    {
+      "from": "404.html",
+      "to": "main.js"
+    },
+    {
+      "from": "about.html",
+      "to": "logo-texture-black.png"
+    },
+    {
+      "from": "about.html",
+      "to": "styles.css"
+    },
+    {
+      "from": "about.html",
+      "to": "styles.css"
+    },
+    {
+      "from": "about.html",
+      "to": "studio-teknabu-logo.webp"
+    },
+    {
+      "from": "about.html",
+      "to": "studio-teknabu-logo.webp"
+    },
+    {
+      "from": "about.html",
+      "to": "apple-touch-icon.png"
+    },
+    {
+      "from": "about.html",
+      "to": "favicon-32x32.png"
+    },
+    {
+      "from": "about.html",
+      "to": "favicon-16x16.png"
+    },
+    {
+      "from": "about.html",
+      "to": "site.webmanifest"
+    },
+    {
+      "from": "about.html",
+      "to": "index.html"
+    },
+    {
+      "from": "about.html",
+      "to": "studio-teknabu-logo-180.webp"
+    },
+    {
+      "from": "about.html",
+      "to": "studio-teknabu-logo-120.webp"
+    },
+    {
+      "from": "about.html",
+      "to": "studio-teknabu-logo-180.webp"
+    },
+    {
+      "from": "about.html",
+      "to": "index.html"
+    },
+    {
+      "from": "about.html",
+      "to": "about.html"
+    },
+    {
+      "from": "about.html",
+      "to": "index.html"
+    },
+    {
+      "from": "about.html",
+      "to": "index.html"
+    },
+    {
+      "from": "about.html",
+      "to": "1714430952637.jpg"
+    },
+    {
+      "from": "about.html",
+      "to": "portfolio-assets/x-icon.svg"
+    },
+    {
+      "from": "about.html",
+      "to": "studio-teknabu-logo-120.webp"
+    },
+    {
+      "from": "about.html",
+      "to": "studio-teknabu-logo-60.webp"
+    },
+    {
+      "from": "about.html",
+      "to": "studio-teknabu-logo-120.webp"
+    },
+    {
+      "from": "about.html",
+      "to": "studio-teknabu-logo-180.webp"
+    },
+    {
+      "from": "about.html",
+      "to": "index.html"
+    },
+    {
+      "from": "about.html",
+      "to": "about.html"
+    },
+    {
+      "from": "about.html",
+      "to": "index.html"
+    },
+    {
+      "from": "about.html",
+      "to": "index.html"
+    },
+    {
+      "from": "about.html",
+      "to": "main.js"
+    },
+    {
+      "from": "about.html",
+      "to": "studio-teknabu-logo.webp"
+    },
+    {
+      "from": "index.html",
+      "to": "logo-texture-black.png"
+    },
+    {
+      "from": "index.html",
+      "to": "apple-touch-icon.png"
+    },
+    {
+      "from": "index.html",
+      "to": "favicon-32x32.png"
+    },
+    {
+      "from": "index.html",
+      "to": "favicon-16x16.png"
+    },
+    {
+      "from": "index.html",
+      "to": "site.webmanifest"
+    },
+    {
+      "from": "index.html",
+      "to": "og-image.jpg"
+    },
+    {
+      "from": "index.html",
+      "to": "og-image.jpg"
+    },
+    {
+      "from": "index.html",
+      "to": "styles.css"
+    },
+    {
+      "from": "index.html",
+      "to": "main.js"
+    },
+    {
+      "from": "index.html",
+      "to": "index.html"
+    },
+    {
+      "from": "index.html",
+      "to": "studio-teknabu-logo.png"
+    },
+    {
+      "from": "index.html",
+      "to": "about.html"
+    },
+    {
+      "from": "index.html",
+      "to": "studio-teknabu-logo.webp"
+    },
+    {
+      "from": "index.html",
+      "to": "portfolio-assets/solva-logo-hero.png"
+    },
+    {
+      "from": "index.html",
+      "to": "portfolio-assets/game-strategy-scene.png"
+    },
+    {
+      "from": "index.html",
+      "to": "portfolio-assets/x-icon.svg"
+    },
+    {
+      "from": "index.html",
+      "to": "studio-teknabu-logo.webp"
+    },
+    {
+      "from": "index.html",
+      "to": "studio-teknabu-logo.png"
+    },
+    {
+      "from": "main.js",
+      "to": "logo-texture-black.png"
+    },
+    {
+      "from": "site.webmanifest",
+      "to": "android-chrome-192x192.png"
+    },
+    {
+      "from": "site.webmanifest",
+      "to": "android-chrome-512x512.png"
+    },
+    {
+      "from": "styles.css",
+      "to": "logo-texture-black.png"
+    },
+    {
+      "from": "styles.css",
+      "to": "logo-texture-black.webp"
+    },
+    {
+      "from": "styles.css",
+      "to": "logo-texture-black.png"
+    },
+    {
+      "from": "styles.css",
+      "to": "logo-texture-black.png"
+    },
+    {
+      "from": "styles.css",
+      "to": "portfolio-assets/big-shoulders-display-variable.woff2"
+    },
+    {
+      "from": "styles.css",
+      "to": "logo-texture-black.webp"
+    }
+  ],
+  "controls_withheld": [
+    "Actual hosting target/current deployment identity and backup+rollback verification before deploy",
+    "Actual production routing/statuses/headers verification; Cloudflare zone URL alone is not target proof"
+  ],
+  "canonical_mode": "clean",
+  "public_origin": "https://teknabu.com",
+  "indexability": "Founder authorised site live tonight21Nov; Home/About index,follow;404noindex,nofollow",
+  "robots_policy": {
+    "index.html": "index, follow",
+    "about.html": "index, follow",
+    "404.html": "noindex, nofollow"
+  },
+  "release_state": "candidate_not_deployed",
+  "asset_hold": [],
+  "asset_hold_reason": "Five previously held assets excluded after proven-unreachable URL rule removal; original source assets preserved. No rights assertion or visual acceptance.",
+  "excluded_dormant_assets": [
+    "cowboys.svg",
+    "lab-texture-bg.png",
+    "lfc.svg",
+    "logo-metallica.svg",
+    "the-prodigy.png"
+  ]
+}

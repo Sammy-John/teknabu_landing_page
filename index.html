@@ -1,266 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Considered design, clear thinking and useful digital experiences." />
+  <meta name="robots" content="index, follow" />
+  <title>To create digital experiences people can trust and control.</title>
+  <link rel="canonical" href="https://teknabu.com/" />
+  <meta name="theme-color" content="#5A4DFF" />
+
+  <!-- Keep: improves LCP -->
+  <link rel="preload" as="image" href="logo-texture-black.png" fetchpriority="high">
+
+  <!-- Favicons / PWA -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Font warmups -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Social -->
+  <meta property="og:title" content="To create digital experiences people can trust and control." />
+  <meta property="og:description" content="Considered design, clear thinking and useful digital experiences." />
+  <meta property="og:image" content="https://teknabu.com/og-image.jpg" />
+  <meta property="og:url" content="https://teknabu.com/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="To create digital experiences people can trust and control." />
+  <meta name="twitter:description" content="Considered design, clear thinking and useful digital experiences." />
+  <meta name="twitter:image" content="https://teknabu.com/og-image.jpg" />
+
+  <!-- Stable: render-blocking CSS (prevents whole-page “shrink”) -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Fonts: non-blocking -->
+  <!-- Fonts: render-blocking so initial size matches live -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Inter:wght@400;600&display=swap&subset=latin" rel="stylesheet">
+
+
+  <!-- Defer scripts -->
+  <script src="main.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Studio Teknabu",
+  "url": "https://teknabu.com",
+  "logo": "https://teknabu.com/studio-teknabu-logo.png",
+  "description": "Considered design, clear thinking and useful digital experiences."
+}
+</script>
+</head>
+
+<body class="visual-refinement page-home">
+  <a class="skip-link sr-only" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="logo-container">
+        <a href="index.html" aria-label="Studio Teknabu — Home">
+          <img src="studio-teknabu-logo.png"
+              alt="Studio Teknabu"
+              class="logo-img"
+              decoding="async"
+              width="180" height="36">
+        </a>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="burger"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="primary-nav">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+
+        <div class="nav-links" id="primary-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Get in touch</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main" id="main">
+  <section class="hero-section" id="home">
+    <!-- ambient layers -->
+    <div class="hero-background kenburns" aria-hidden="true"></div>
+    <div class="hero-vignette" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="hero-left">
+        <h1>To create digital experiences people can trust and control.</h1>
+        <p class="hero-subtext">Considered design, clear thinking and useful digital experiences.</p>
+        <div class="cta-row"><a href="#contact" class="cta-button">Get in touch →</a></div>
+      </div>
+
+      <div class="hero-right" aria-hidden="true"></div>
+    </div>
+  </section>
+
+
+
+  <section class="about-section defer-render" id="about">
+    <div class="about-inner"><div class="about-text">
+      <h2 class="section-heading">About</h2><h3>Style and substance</h3>
+      <p>Studio Teknabu is an independent company with a clear purpose: to create digital experiences people can trust and control.</p>
+      <p>Considered design gives an experience clarity and character. A useful purpose gives that care direction.</p>
+      <a href="about.html" class="about-link story-link">More about our story →</a>
+    </div><div class="about-logo"><img src="studio-teknabu-logo.webp" alt="Studio Teknabu Logo" class="about-logo-img" data-delay="0.2s" loading="lazy"></div></div>
+  </section>
+  <section id="portfolio" class="projects-section dark portfolio-section" aria-labelledby="portfolio-title">
+    <span id="projects" class="anchor-alias" aria-hidden="true"></span>
+    <div class="projects-header"><h2 id="portfolio-title" class="section-heading">Portfolio</h2></div>
+    <div class="projects-list">
+      <article class="project-row portfolio-card" aria-labelledby="portfolio-solva-title">
+        <div class="portfolio-visual solva-visual"><img src="portfolio-assets/solva-logo-hero.png" alt="" width="692" height="224" loading="lazy"></div>
+        <div class="project-meta"><h3 id="portfolio-solva-title" class="sr-only">Solva</h3><p>An app for solo female-led businesses, including cleaners and contract carers, intended to support scheduling work and invoicing for it.</p></div>
+      </article>
+      <article class="project-row portfolio-card" aria-labelledby="portfolio-branchpoint-title">
+        <div class="portfolio-visual branchpoint-visual"><span class="branchpoint-wordmark" aria-hidden="true">BRANCHPOINT</span></div>
+        <div class="project-meta"><h3 id="portfolio-branchpoint-title" class="sr-only">Branchpoint</h3><p>An AI digital magazine intended to bring the feel of traditional print to a digital format.</p></div>
+      </article>
+      <article class="project-row portfolio-card" aria-labelledby="portfolio-game-title">
+        <div class="portfolio-media"><div class="portfolio-visual game-visual"><img src="portfolio-assets/game-strategy-scene.png" alt="Strategy game illustration" width="960" height="600" loading="lazy"></div></div>
+        <div class="project-meta"><h3 id="portfolio-game-title" class="sr-only">Personal strategy game</h3><p>A strategy game pursued as a personal project. It is not for sale.</p></div>
+      </article>
+    </div>
+    <div class="launch-marker" id="studio-launch" role="note" aria-label="Portfolio launch date">
+      <span class="launch-marker-label">Portfolio launch</span>
+      <time class="launch-marker-date" datetime="2026-12-01">Coming Dec 1st</time>
+    </div>
+  </section>
+    <section class="about-section contact-panel contact-refined" id="contact" aria-labelledby="contact-title">
+      <div class="contact-inner">
+        <div class="contact-copy">
+        <h2 id="contact-title">Get in touch</h2>
+        <p>If you have an idea to share or see an opportunity to work together, I’d like to hear from you.</p>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:sjr.dev@protonmail.com" class="contact-icon" aria-label="Email sjr.dev@protonmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><span class="sr-only">Email</span></a>
+          <a href="https://x.com/nabu_tech" class="contact-icon" aria-label="Sammy John Rawlinson on X"><img src="portfolio-assets/x-icon.svg" alt="" width="1200" height="1227" aria-hidden="true"><span class="sr-only">X</span></a>
+          <a href="https://www.linkedin.com/in/sammyjohnrawlinson/" class="contact-icon" aria-label="Sammy John Rawlinson on LinkedIn"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg><span class="sr-only">LinkedIn</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="studio-teknabu-logo.webp" alt="Studio Teknabu" class="footer-logo" loading="lazy" />
         
-        <!-- SEO -->
-        <title>Teknabu | Innovating Tech</title>
-        <meta name="description" content="Teknabu delivers exceptional digital solutions, offering innovative software, actionable insights, and expertise in the Software Development Life Cycle.">
-        <meta name="keywords" content="Teknabu, software development, digital solutions, SDLC, technology innovation, custom software, tech insights">
-        <meta name="author" content="Sammy John Rawlinson">
-    
-        <!-- Open Graph (OG) Tags for Social Media -->
-        <meta property="og:title" content="Teknabu | Innovating Tech">
-        <meta property="og:description" content="Discover exceptional digital solutions with Teknabu. Partner with us for custom software, tech insights, and SDLC expertise.">
-        <meta property="og:image" content="https://www.teknabu.com/images/thumbnails/teknabu_landing_page_OG.webp">
-        <meta property="og:url" content="https://www.teknabu.com/">
-        <meta property="og:type" content="website">
-    
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Teknabu | Innovating Tech">
-        <meta name="twitter:description" content="Discover exceptional digital solutions with Teknabu. Partner with us for custom software, tech insights, and SDLC expertise.">
-        <meta name="twitter:image" content="https://www.teknabu.com/images/thumbnails/teknabu_landing_page_Twitter.webp">
-
-    
-        <!-- Favicon -->
-        <link rel="icon" href="https://www.teknabu.com/images/favicon/favicon.ico" type="image/x-icon">
-    
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./styles/styles.css">
-    
-        <!-- Preload Images -->
-        <link rel="preload" href="./images/requirements.webp" as="image" type="image/webp">
-        <link rel="preload" href="./images/design.webp" as="image" type="image/webp">
-        <link rel="preload" href="./images/development.webp" as="image" type="image/webp">
-        <link rel="preload" href="./images/testing.webp" as="image" type="image/webp">
-        <link rel="preload" href="./images/deployment.webp" as="image" type="image/webp">
-    
-        <!-- Canonical URL -->
-        <link rel="canonical" href="https://www.teknabu.com/">
-
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-546LGV67DR"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-546LGV67DR');
-        </script>
-    </head>
-    
-<body>
-    <header class="navbar hidden">
-        <div class="nav-logo">
-            <div class="logo-static" aria-hidden="true"></div>
-            <div class="logo-text-static">
-                <span>e</span><span>k</span><span>N</span><span>a</span><span>b</span><span>u</span>
-            </div>
-        </div>
-        <nav class="nav-links">
-            <a href="#hero" aria-label="Go to Home section">Home</a>
-            <a href="#mission-statement" aria-label="Go to Mission Statement section">About</a>
-            <a href="#approach" aria-label="Go to SDLC section">Process</a>
-        </nav>
-        <div class="burger-menu" role="button" aria-expanded="false" onclick="toggleMobileMenu()" tabindex="0">
-            <i class="fas fa-bars"></i>
-        </div>
-        <div class="mobile-menu">
-            <a href="#hero" tabindex="0" aria-label="Go to Home section">Home</a>
-            <a href="#mission-statement" tabindex="0" aria-label="Go to About section">About</a>
-            <a href="#sdlc-section" tabindex="0" aria-label="Go to Process section">Process</a>
-        </div>
-    </header>
-
-    <section class="hero" id="hero" role="banner">
-        <div class="logo-container">
-            <div class="logo" aria-hidden="true"></div>
-            <div class="logo-text">
-                <span>e</span><span>k</span><span>N</span><span>a</span><span>b</span><span>u</span>
-            </div>
-        </div>
-
-        <!-- Aligning the text to the left -->
-        <div class="hero-content">
-            <h1>Creating Exceptional Digital Solutions</h1>
-            <div class="hero-cta-buttons">
-                <a href="#services" class="cta-button">Custom Software</a>
-                <a href="#services" class="cta-button">Tech Insights</a>
-                <a href="#services" class="cta-button">Learning Resources</a>
-                <a href="#mission-statement" class="cta-button primary">About</a>
-            </div>
-        </div>
-    </section>
-    
-    <section class="mission-statement" id="mission-statement">
-        <h2>Your Partners in Building Purpose-Driven Digital Products</h2>
-        <div class="columns">
-            <!-- About Column -->
-            <div class="column about" role="region" aria-label="About Section">
-                <h3>About</h3>
-                <p>At Teknabu, we turn ideas into impactful software. Whether you're launching a new product or scaling an existing one, we offer innovative solutions, practical insights, and a focus on long-term growth. We're passionate about learning, sharing knowledge, and building technology that makes a difference — together.</p>
-                <a href="https://sammyjohnrawlinson.teknabu.com" class="personal-link">
-                    <span>Find out more about who is behind Teknabu</span>
-                    <i class="fas fa-long-arrow-alt-right"></i>
-                </a>
-            </div>
-    
-            <!-- Services Column -->
-            <div class="column services" role="region" aria-label="Services Section">
-                <h3>Services</h3>
-                <ul>
-                    <li><i class="service-icon fas fa-wrench" aria-hidden="true"></i> 
-                        <a href="javascript:void(0);" onclick="openModal()" class="service-text" aria-label="Learn more about Custom Software Solutions">Custom Software Solutions</a>
-                    </li>
-                    <li><i class="service-icon fas fa-box"></i> 
-                        <a href="javascript:void(0);" onclick="openModal()" class="service-text" arial-label="Learn more about Packaged Software Products">Packaged Software Products</a>
-                    </li>
-                    <li><i class="service-icon fas fa-newspaper"></i> 
-                        <a href="javascript:void(0);" onclick="openModal()" class="service-text" aria-label="Go to more about Tech News and Insights">Tech News & Insights</a>
-                    </li>
-                    <li><i class="service-icon fas fa-graduation-cap"></i> 
-                        <a href="javascript:void(0);" onclick="openModal()" class="service-text" aria-label="Go to Learninng Materials and Resources">Learning Materials & Resources</a>
-                    </li>
-                    <li><i class="service-icon fas fa-chart-line"></i> 
-                        <a href="javascript:void(0);" onclick="openModal()" class="service-text" aria-label="Learn More about Digital Strategy Consultation">Digital Strategy Consulting</a>
-                    </li>
-                    <li><i class="service-icon fas fa-users"></i> 
-                        <a href="javascript:void(0);" onclick="openModal()" class="service-text" aria-label="Go to Community and Services">Community & Support</a>
-                    </li>
-                </ul>
-                
-            </div>
-        </div>
-    </section>
-
-   <section class="approach-section" id="approach" role="region" aria-labelledbu="approach-heading">
-  <div class="approach-intro">
-    <h2>How We Build Better Software</h2>
-    <p>Whether you need a full build or expert input at a specific stage, our flexible approach adapts to your goals — helping you move forward with clarity, speed, and confidence.</p>
-  </div>
-
-  <div class="timeline">
-
-    <div class="timeline-item">
-      <div class="timeline-marker"></div>
-      <div class="timeline-row">
-        <div class="timeline-content">
-          <h3>Discovery & Planning</h3>
-          <p>We help align your product vision and technical strategy with a clear roadmap — whether you’re starting from scratch or rethinking your goals.</p>
-        </div>
-        <img src="./images/requirements.webp" alt="Discovery & Planning">
       </div>
+
+      <nav class="footer-links" aria-label="Footer">
+<ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#contact">Get in touch</a></li></ul>
+</nav>
+
+      <address class="footer-meta">
+        <p>© <span id="year">2026</span></p>
+        <p class="footer-tagline">Built by
+          <span class="brand-name">
+            <span class="brand-studio">studio</span>
+            <span class="brand-teknabu">teknabu</span>
+          </span>
+        </p>
+        
+      </address>
+
     </div>
+  </footer>
 
-    <div class="timeline-item">
-      <div class="timeline-marker"></div>
-      <div class="timeline-row">
-        <div class="timeline-content">
-          <h3>Design & UX</h3>
-          <p>Collaborative design sprints produce intuitive interfaces, wireframes, and user flows grounded in accessibility and real feedback.</p>
-        </div>
-        <img src="./images/design.webp" alt="Design & UX">
-      </div>
+  <noscript>
+    <div class="noscript-warning">
+      JavaScript is disabled in your browser. Some features may not work as expected.
     </div>
+  </noscript>
 
-    <div class="timeline-item">
-      <div class="timeline-marker"></div>
-      <div class="timeline-row">
-        <div class="timeline-content">
-          <h3>Agile Development</h3>
-          <p>We build scalable, maintainable systems using clean full-stack code and modern DevOps practices — adapting to your stack or bringing our own.</p>
-        </div>
-        <img src="./images/development.webp" alt="Agile Development">
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-marker"></div>
-      <div class="timeline-row">
-        <div class="timeline-content">
-          <h3>Launch Readiness</h3>
-          <p>Comprehensive testing, QA automation, and performance checks ensure your product is ready for users — and your team is ready for release.</p>
-        </div>
-        <img src="./images/testing.webp" alt="Launch Readiness">
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-marker"></div>
-      <div class="timeline-row">
-        <div class="timeline-content">
-          <h3>Support & Evolution</h3>
-          <p>After launch, we offer support, iteration, and advisory to help you scale, gather insights, and evolve your product with confidence.</p>
-        </div>
-        <img src="./images/deployment.webp" alt="Support & Evolution">
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-    
-<footer role="contentinfo">
-    <div class="footer-content">
-        <div class="footer-section contact-info">
-            <h3>Contact</h3>
-            <p>
-                Email: 
-                <a href="mailto:sjr.dev@protonmail.com" 
-                   class="email-link" 
-                   aria-label="Send an email to sjr.dev@protonmail.com">
-                   sjr.dev@protonmail.com
-                </a>
-                <button onclick="copyEmail()" 
-                        aria-label="Copy email address to clipboard" 
-                        class="clipboard-icon">
-                    <i class="fas fa-clipboard"></i>
-                </button>
-            </p>
-        </div>        
-        <div class="footer-section social-links">
-            <h3>Let's Connect</h3>
-            <div class="social-icons">
-                <a href="https://x.com/nabu_tech" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/sammyjohnrawlinson/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Sammy-John" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
-        <!-- Logo and Address Section -->
-        <div class="footer-logo-address">
-            <div class="footer-logo">
-                <div class="logo-static" aria-hidden="true"></div>
-                <div class="logo-text-static">
-                    <span>e</span><span>k</span><span>N</span><span>a</span><span>b</span><span>u</span>
-                </div>
-            </div>
-            <div class="footer-address">
-                <p>&copy; 2024 TekNabu. All Rights Reserved.</p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-    
-    <!-- Modal Structure -->
-    <div id="comingSoonModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
-        <div class="modal-content">
-            <h3 id="modalTitle">Coming Soon...</h3>
-            <p>This service will be available soon. Stay tuned!</p>
-            <button id="closeModal" class="close-btn" aria-label="Close">Close</button>
-        </div>
-    </div>
-    
-
-    <script src="./scripts/teknabu.js"></script>
-    <script src="./scripts/timeline.js"></script>
 
 </body>
 </html>
